@@ -135,6 +135,18 @@ if (isset($_POST['regis'])) {
                 }
             }
         }
+
+        if($nm[$b] >= 10 && $nf[$b] >= 10 && $np[$b] < 10){
+            $twoaprob = $twoaprob + 1;
+        } else {
+            if($nm[$b] >= 10 && $nf[$b] < 10 && $np[$b] >= 10){
+                $twoaprob = $twoaprob + 1;
+            } else{
+                if($nm[$b] < 10 && $nf[$b] >= 10 && $np[$b] >= 10){
+                    $twoaprob = $twoaprob + 1;
+                }
+            }
+        }
     }
 
     // Salidas
