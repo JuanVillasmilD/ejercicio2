@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudiantes</title>
     <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="index.php?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -16,7 +17,7 @@
 </html>
 
 <?php
-if (isset($_POST['regis'])) {
+if (isset($_POST['regis']) && !empty($_POST['regis'])) {
 
     $cedula = $_POST['cedula'];
     $name = $_POST['name'];
@@ -55,7 +56,7 @@ if (isset($_POST['regis'])) {
     $maxp = max((array)$np);
 
     for ($b = 0; $b < count((array)$name); $b++) {
-
+        // ifs para saber si las notas son mayores a 10
         if ($nm[$b] >= 10) {
             $aprobm = $aprobm + 1;
         } else {
