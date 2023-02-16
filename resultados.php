@@ -10,17 +10,12 @@
 </head>
 
 <body>
-
+    
 </body>
 
 </html>
 
 <?php
-// Arrays para guardar mensajes y errores:
-$aErrores = array();
-$aMensajes = array();
-// Patrón para usar en expresiones regulares (admite letras acentuadas y espacios):
-$patron_texto = "/^[a-zA-ZáéíóúÁÉÍÓÚäëïöüÄËÏÖÜàèìòùÀÈÌÒÙ\s]+$/";
 if (isset($_POST['regis'])) {
 
     $cedula = $_POST['cedula'];
@@ -122,29 +117,29 @@ if (isset($_POST['regis'])) {
     }
 
     // Salidas
-    echo "Nota promedio de cada materia <br>";
-    echo "Nota promedio de matematicas: " . $npromnm . "<br>";
-    echo "Nota promedio de fisica: " . $npromnf . "<br>";
-    echo "Nota promedio de programacion: " . $npromnp . "<br><br>";
+    echo "<form action=''><h2>Nota promedio de cada materia</h2> <br>";
+    echo "<p>Nota promedio de matematicas: " . $npromnm . "</p><br>";
+    echo "<p>Nota promedio de fisica: " . $npromnf . "<br>";
+    echo "<p>Nota promedio de programacion: " . $npromnp . "<br><br>";
 
-    echo "Numero de alumnos aprobados en cada materia <br>";
-    echo "Numero de alumnos aprobados en matematicas: " . $aprobm . "<br>";
-    echo "Numero de alumnos aprobados en fisica: " . $aprobf . "<br>";
-    echo "Numero de alumnos aprobados en programacion: " . $aprobp . "<br><br>";
+    echo "<h2>Numero de alumnos aprobados en cada materia</h2> <br>";
+    echo "<p>Numero de alumnos aprobados en matematicas: " . $aprobm . "</p><br>";
+    echo "<p>Numero de alumnos aprobados en fisica: " . $aprobf . "</p><br>";
+    echo "<p>Numero de alumnos aprobados en programacion: " . $aprobp . "</p><br><br>";
 
-    echo "Numero de alumnos aplazados en cada materia <br>";
-    echo "Numero de alumnos aplazados en matematicas: " . $desapm . "<br>";
-    echo "Numero de alumnos aplazados en fisica: " . $desapf . "<br>";
-    echo "Numero de alumnos aplazados en programacion: " . $desapp . "<br><br>";
+    echo "<h2>Numero de alumnos aplazados en cada materia</h2> <br>";
+    echo "<p>Numero de alumnos aplazados en matematicas: " . $desapm . "</p><br>";
+    echo "<p>Numero de alumnos aplazados en fisica: " . $desapf . "</p><br>";
+    echo "<p>Numero de alumnos aplazados en programacion: " . $desapp . "</p><br><br>";
 
-    echo "Numero de alumnos que aprobaron todas las materias: " . $aprobados . "<br>";
-    echo "Numero de alumnos que aprobaron una sola materia: " . $oneaprob . "<br>";
-    echo "Numero de alumnos que aprobaron dos materias: " . $twoaprob . "<br><br>";
+    echo "<p>Numero de alumnos que aprobaron todas las materias: " . $aprobados . "</p><br>";
+    echo "<p>Numero de alumnos que aprobaron una sola materia: " . $oneaprob . "</p><br>";
+    echo "<p>Numero de alumnos que aprobaron dos materias: " . $twoaprob . "</p><br><br>";
 
-    echo "Nota maxima en cada materia <br>";
-    echo "Nota maxima en matematicas: " . $maxm . "<br>";
-    echo "Nota maxima en fisica: " . $maxf . "<br>";
-    echo "Nota maxima en programacion: " . $maxp . "<br>";
+    echo "<h2>Nota maxima en cada materia</h2> <br>";
+    echo "<p>Nota maxima en matematicas: " . $maxm . "</p><br>";
+    echo "<p>Nota maxima en fisica: " . $maxf . "</p><br>";
+    echo "<p>Nota maxima en programacion: " . $maxp . "</p><br></form>";
 }
 
 
