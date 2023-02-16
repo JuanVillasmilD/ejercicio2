@@ -119,7 +119,7 @@ if (isset($_POST['regis'])) {
     // Salidas
     echo "<form action=''><h2>Nota promedio de cada materia</h2> <br>";
     echo "<p>Nota promedio de matematicas: " . $npromnm . "</p><br>";
-    echo "<p>Nota promedio de fisica: " . $npromnf . "<br>";
+    echo "<p>Nota promedio de fisica: " . $npromnf . "</p><br>";
     echo "<p>Nota promedio de programacion: " . $npromnp . "<br><br>";
 
     echo "<h2>Numero de alumnos aprobados en cada materia</h2> <br>";
@@ -132,6 +132,7 @@ if (isset($_POST['regis'])) {
     echo "<p>Numero de alumnos aplazados en fisica: " . $desapf . "</p><br>";
     echo "<p>Numero de alumnos aplazados en programacion: " . $desapp . "</p><br><br>";
 
+    echo "<h2>Numero de alumnos aprobados</h2> <br>";
     echo "<p>Numero de alumnos que aprobaron todas las materias: " . $aprobados . "</p><br>";
     echo "<p>Numero de alumnos que aprobaron una sola materia: " . $oneaprob . "</p><br>";
     echo "<p>Numero de alumnos que aprobaron dos materias: " . $twoaprob . "</p><br><br>";

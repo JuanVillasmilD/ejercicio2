@@ -29,10 +29,22 @@ h1 {
 	color: #444;
 }
 
+h2 {
+	margin-left: 5%;
+	margin-top: 2%;
+	text-align: left;
+	color: #444;
+}
+
 h3 {
 	text-align: center;
 	padding: 1px;
 	color: #444;
+}
+
+p {
+	margin-left: 5%;
+	text-align: left;
 }
 
 

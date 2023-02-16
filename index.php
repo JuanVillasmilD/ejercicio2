@@ -19,7 +19,7 @@
 
     <?php
 
-    if (isset($_POST['inputs'])) {
+    if (isset($_POST['inputs']) && !empty($_POST['inputs'])) {
 
         $cant = $_POST['cant'];
 
@@ -31,16 +31,23 @@
                 <input type="text" name="name[]" placeholder="Nombre"><br>
                 <input type="number" name="nm[]" placeholder="Nota de matematicas"><br>
                 <input type="number" name="nf[]" placeholder="Nota de fisica"><br>
-                <input type="number" name="np[]" placeholder="Nota de programacion"><br><br><br>
+                <input type="number" name="np[]" placeholder="Nota de programacion"><br><br>
 
-        <?php
+            <?php
 
         }
     }
+    if (empty($_POST['inputs'])) {
+    } else {
 
-        ?>
-        <input type="submit" name="regis" value="Registrar"><br><br>
+
+
+            ?>
+            <input type="submit" name="regis" value="Registrar"><br><br>
             </form>
+        <?php
+    }
+        ?>
 
 </body>
 
