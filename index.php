@@ -29,9 +29,9 @@
                 <h1>Estudiante #<?php echo $a + 1 ?></h1>
                 <input type="text" name="cedula[]" placeholder="Cedula de identidad"><br>
                 <input type="text" name="name[]" placeholder="Nombre"><br>
-                <input type="number" name="nm[]" placeholder="Nota de matematicas"><br>
-                <input type="number" name="nf[]" placeholder="Nota de fisica"><br>
-                <input type="number" name="np[]" placeholder="Nota de programacion"><br><br>
+                <input type="number" name="nm[]" placeholder="Nota de matemáticas"><br>
+                <input type="number" name="nf[]" placeholder="Nota de física"><br>
+                <input type="number" name="np[]" placeholder="Nota de programación"><br><br>
 
         <?php
 

@@ -6,8 +6,8 @@
 }
 
 body {
-	background-size: 100%;
-	background-attachment: fixed;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(55, 53, 255, 1) 100%);
 }
 
 form {
@@ -66,7 +66,7 @@ select {
 	border-radius: 12px;
 }
 
-input[type='submit']{
+input[type='submit'] {
 	background-color: #48e;
 	color: #fff;
 	width: calc(80% - 70px);
@@ -74,10 +74,10 @@ input[type='submit']{
 	margin-top: 40px;
 	border: none;
 	border-radius: 12px;
-	
+
 }
 
-input[type='reset']{
+input[type='reset'] {
 	background-color: #48e;
 	color: #fff;
 	width: calc(80% - 70px);
@@ -85,7 +85,7 @@ input[type='reset']{
 	margin-top: 15px;
 	border: none;
 	border-radius: 12px;
-	
+
 }
 
 button {
